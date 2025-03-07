@@ -1,1 +1,0 @@
-C:\Apps\Waveylength\wwwroot\ignore.gitignore.txt

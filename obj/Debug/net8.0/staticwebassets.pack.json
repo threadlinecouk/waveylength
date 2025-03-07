@@ -13,10 +13,6 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Apps\\Waveylength\\wwwroot\\ignore.gitignore.txt",
-      "PackagePath": "staticwebassets\\ignore.gitignore.txt"
-    },
-    {
       "Id": "C:\\Apps\\Waveylength\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

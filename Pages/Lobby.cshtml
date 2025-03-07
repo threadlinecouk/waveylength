@@ -1,10 +1,36 @@
 ﻿@page
 @model LobbyModel
 @{
-    ViewData["Title"] = "Game Lobby";
+    Layout = "_Layout";  // Ensure you're using your site's layout
+    ViewData["Title"] = "Lobby";
 }
 
-<div class="text-center">
-    <h2>Welcome to the Wavelength Lobby</h2>
-    <p>This is a placeholder for the game lobby where players can join or create a game.</p>
+<div class="container mt-5">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <h2 class="mb-4 text-center">Wavelength Lobby</h2>
+    <div class="row">
+        <!-- Create Lobby Section -->
+        <div class="col-md-6">
+            <h3>Create a Lobby</h3>
+            <form method="post" asp-page-handler="CreateLobby">
+                <div class="form-group mb-3">
+                    <label for="LobbyName" class="form-label">Lobby Name</label>
+                    <input type="text" id="LobbyName" name="LobbyName" class="form-control" required />
+                </div>
+                <button type="submit" class="btn btn-primary">Create</button>
+            </form>
+        </div>
+
+        <!-- Join Lobby Section -->
+        <div class="col-md-6">
+            <h3>Join a Lobby</h3>
+            <form method="post" asp-page-handler="JoinLobby">
+                <div class="form-group mb-3">
+                    <label for="LobbyCode" class="form-label">Lobby Code</label>
+                    <input type="text" id="LobbyCode" name="LobbyCode" class="form-control" required />
+                </div>
+                <button type="submit" class="btn btn-success">Join</button>
+            </form>
+        </div>
+    </div>
 </div>

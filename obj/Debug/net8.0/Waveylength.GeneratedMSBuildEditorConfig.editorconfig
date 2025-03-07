@@ -32,6 +32,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9iYnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Apps/Waveylength/Pages/Play.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGxheS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Apps/Waveylength/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
