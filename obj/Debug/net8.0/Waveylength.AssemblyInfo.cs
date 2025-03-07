@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Waveylength")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+86fc4723db44fe754c3919de50fb92dbb4d8f0dd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b53217165bd8c302ef36265b1bb915868787d4db")]
 [assembly: System.Reflection.AssemblyProductAttribute("Waveylength")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Waveylength")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,34 +1,22 @@
 ﻿@page
-@model LobbyModel
+@model Waveylength.Pages.LobbyModel
 @{
-    Layout = "_Layout";  // Use your site's shared layout
+    Layout = "_Layout";
     ViewData["Title"] = "Lobby";
 }
 
 <div class="container mt-5">
     <h2 class="mb-4 text-center">Wavelength Lobby</h2>
 
-    <!-- Create Room Button (Full width) -->
-    <div class="row justify-content-center">
-        <div class="col-md-6">
-            <form method="post" asp-page-handler="CreateLobby">
-                <div class="d-grid gap-2 mb-4">
-                    <button type="submit" class="btn btn-primary btn-lg">Create Room</button>
-                </div>
-            </form>
-
-            <!-- Join Room Section -->
-            <form method="post" asp-page-handler="JoinLobby">
-                <div class="input-group">
-                    <input type="text" name="LobbyCode" class="form-control" placeholder="Enter Room Code" required />
-                    <button type="submit" class="btn btn-success">Join Game</button>
-                </div>
-            </form>
-
-            <!-- Validation Summary for Errors -->
-            <div class="mt-3">
-                <div asp-validation-summary="All" class="text-danger"></div>
-            </div>
+    <form method="post" asp-page-handler="CreateLobby">
+        <div class="d-grid gap-2 mb-3">
+            <button type="submit" class="btn btn-primary btn-lg">Create Room</button>
         </div>
+    </form>
+
+
+    <div class="d-grid gap-2">
+        <!-- Join Room Button -->
+        <a class="btn btn-secondary btn-lg" asp-page="JoinRoom">Join Room</a>
     </div>
 </div>

@@ -19,15 +19,11 @@ namespace Waveylength.Pages
 
 		public IActionResult OnPostCreateLobby()
 		{
-			// Generate a unique 6-character lobby code
 			var generatedCode = Guid.NewGuid().ToString("N").Substring(0, 6).ToUpper();
-
-			// Store the lobby name (or any other data) in the dictionary
-			InMemoryLobbies[generatedCode] = LobbyName;
-
-			// Redirect to the Play page with the generated code as a parameter
-			return RedirectToPage("Play", new { code = generatedCode });
+			return RedirectToPage("RoomSettings", new { code = generatedCode });
 		}
+
+
 
 
 		public IActionResult OnPostJoinLobby()

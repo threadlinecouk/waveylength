@@ -1,0 +1,29 @@
+﻿@page
+@model Waveylength.Pages.JoinRoomModel
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Join Room";
+}
+
+<div class="container mt-5">
+    <h2 class="mb-4 text-center">Join a Room</h2>
+    <form method="post">
+        <div class="mb-3">
+            <label asp-for="PlayerName" class="form-label">Your Name</label>
+            <input asp-for="PlayerName" class="form-control" required />
+            <span asp-validation-for="PlayerName" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="RoomCode" class="form-label">Room Code</label>
+            <input asp-for="RoomCode" class="form-control" required />
+            <span asp-validation-for="RoomCode" class="text-danger"></span>
+        </div>
+        <div class="d-grid">
+            <button type="submit" class="btn btn-primary btn-lg">Join Lobby</button>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

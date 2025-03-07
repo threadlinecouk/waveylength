@@ -1,0 +1,33 @@
+﻿@page "{code?}"
+@model Waveylength.Pages.RoomSettingsModel
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Room Settings";
+}
+
+<div class="container mt-5">
+    <h2 class="mb-4 text-center">Room Settings</h2>
+    <form method="post">
+        <div class="mb-3">
+            <label asp-for="HostName" class="form-label">Your Name</label>
+            <input asp-for="HostName" class="form-control" required />
+            <span asp-validation-for="HostName" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="GameStyle" class="form-label">Game Style</label>
+            <select asp-for="GameStyle" class="form-select">
+                <option value="Give Clue" selected>Give Clue</option>
+                <option value="Give Rating">Give Rating</option>
+            </select>
+        </div>
+        <!-- Hidden field for room code -->
+        <input type="hidden" name="code" value="@Model.RoomCode" />
+        <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-primary btn-lg">Create Room</button>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
