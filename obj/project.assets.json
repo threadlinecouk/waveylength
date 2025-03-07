@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ameer\\OneDrive\\Apps\\Wavelength\\Waveylength\\Waveylength.csproj",
+      "projectUniqueName": "C:\\Apps\\Waveylength\\Waveylength.csproj",
       "projectName": "Waveylength",
-      "projectPath": "C:\\Users\\Ameer\\OneDrive\\Apps\\Wavelength\\Waveylength\\Waveylength.csproj",
+      "projectPath": "C:\\Apps\\Waveylength\\Waveylength.csproj",
       "packagesPath": "C:\\Users\\Ameer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ameer\\OneDrive\\Apps\\Wavelength\\Waveylength\\obj\\",
+      "outputPath": "C:\\Apps\\Waveylength\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
